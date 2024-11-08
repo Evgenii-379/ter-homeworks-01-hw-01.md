@@ -94,16 +94,21 @@
 ## **Задание 1**
 
 1.
-2.
+2.Файл в .gitignore: personal.auto.tfvars - этот файл используется для хранения секретных или специальных приложений, которые не должны быть доступны другим пользователям или в общих репозиториях.
 3.
 - ![scrinshot](https://github.com/Evgenii-379/ter-homeworks-01-hw-01.md/blob/main/Снимок%20экрана%202024-11-07%20231747.png)
 - ![scrinshot](https://github.com/Evgenii-379/ter-homeworks-01-hw-01.md/blob/main/Снимок%20экрана%202024-11-07%20231828.png)
-4.
+4.Исправленно "1nginx" на "nginx", имена ресурсов должны начинаться с буквы. Ссылка на "random_password" неверна, используется несуществующее свойство "resuLT"- изменено на result. 
+В ресурсе docker image - добавленно имя ресурса "nginx". 
 5.
 - ![scrinshot](https://github.com/Evgenii-379/ter-homeworks-01-hw-01.md/blob/main/Снимок%20экрана%202024-11-07%20213452.png)
 - ![scrinshot](https://github.com/Evgenii-379/ter-homeworks-01-hw-01.md/blob/main/Снимок%20экрана%202024-11-07%20232059.png)
-6.
+6.Использование ключа -auto-approve повышает риск непреднамеренных изменений инфраструктуры в terraform, так как эта команда автоматически применяет изменения без запроса подтверждения у пользователя.
+Этот ключ может пригодиться для автоматизации процесса, позволяет быстро создавать и удалять тестовые среды, быстрое обновление инфраструктуры.
 - ![scrinshot](https://github.com/Evgenii-379/ter-homeworks-01-hw-01.md/blob/main/Снимок%20экрана%202024-11-07%20232913.png)
+7.
 - ![scrinshot](https://github.com/Evgenii-379/ter-homeworks-01-hw-01.md/blob/main/Снимок%20экрана%202024-11-07%20233422.png)
+8.
 - ![scrinshot](https://github.com/Evgenii-379/ter-homeworks-01-hw-01.md/blob/main/Снимок%20экрана%202024-11-07%20234914.png)
-
+В предоставленном коде, в блоке resource "docker_image" прописанна строка:
+keep_locally = true, если true, то образ Docker не будет удалён при операции уничтожения. 
