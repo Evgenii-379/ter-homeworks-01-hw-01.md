@@ -95,6 +95,7 @@
 
 1.
 2.Файл в .gitignore: personal.auto.tfvars - этот файл используется для хранения секретных или специальных приложений, которые не должны быть доступны другим пользователям или в общих репозиториях.
+
 3.
 - ![scrinshot](https://github.com/Evgenii-379/ter-homeworks-01-hw-01.md/blob/main/Снимок%20экрана%202024-11-07%20231747.png)
 - ![scrinshot](https://github.com/Evgenii-379/ter-homeworks-01-hw-01.md/blob/main/Снимок%20экрана%202024-11-07%20231828.png)
